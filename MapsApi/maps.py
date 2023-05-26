@@ -17,13 +17,24 @@ def get_latitude_longitude(location):
             return lat, lng
 
     return None, None
+#Adding multiple locations
+locations = ['Gustavslund', 'Östra Ormsta', 'Kårsta torg', 'Vallentuna station', 'Markims Husby', 'Uthamra', 'Kårsta station']
 
+#Creating an empty list to store the locations
+coordinates = []
 
-location = 'sollentuna'
+for location in locations:
 
 # Retrieve latitude and longitude for the location
-latitude, longitude = get_latitude_longitude(location)
+    latitude, longitude = get_latitude_longitude(location)
+    
+    if latitude and longitude:
+        coordinates.append((location,latitude,longitude))
+#print the coordinates
 
-print(f'Location: {location}')
-print(f'Latitude: {latitude}')
-print(f'Longitude: {longitude}')
+for location, latitude, longitude in coordinates:
+    print(f'Location: {location}')
+    print(f'Latitude: {latitude}')
+    print(f'Longitude: {longitude}')
+    print("------")
+
