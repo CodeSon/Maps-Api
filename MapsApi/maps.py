@@ -38,3 +38,32 @@ for location, latitude, longitude in coordinates:
     print(f'Longitude: {longitude}')
     print("------")
 
+"""
+Location: Gustavslund
+Latitude: 59.32932349999999
+Longitude: 18.0685808
+------
+Location: Östra Ormsta
+Latitude: 59.32932349999999
+Longitude: 18.0685808
+------
+Location: Kårsta torg
+Latitude: 59.32932349999999
+Longitude: 18.0685808
+------
+Location: Vallentuna station
+Latitude: 59.5338921
+Longitude: 18.0798404
+------
+Location: Markims Husby
+Latitude: 59.40969579999999
+Longitude: 17.9284919
+------
+Location: Uthamra
+Latitude: 59.509968
+Longitude: 18.054532
+------
+Location: Kårsta station
+Latitude: 59.32932349999999
+Longitude: 18.0685808
+"""
